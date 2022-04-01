@@ -13,7 +13,6 @@ function App() {
       <div className="App">
         <Header />
         <Limits />
-        <SearchTransaction />
         <TransactionList />
         <AddTransaction />
       </div>

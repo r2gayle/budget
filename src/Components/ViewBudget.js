@@ -6,16 +6,12 @@ function ViewBudget({isEditing, setIsEditing}) {
     console.log('view budget rendered');
 
     return (
-        <div>
-        <div className="div">
-            <p>Budget Limit</p>
-            <p>${budgetLimit}</p>
+        <div className="view-budget-container">
+            <p>Budget Limit: ${budgetLimit}</p>
+            <button onClick={ () => {
+                setIsEditing(true)
+            }}>Edit</button>
         </div>
-        <button onClick={ () => {
-            setIsEditing(true)
-        }}>Edit</button>
-        </div>
-
     )
 
 }

@@ -23,10 +23,9 @@ function ChangeBudget({isEditing, setIsEditing}) {
     
 
     return (
-        <div>
-            <form action="#" onSubmit={handleSubmit}>
+        <form className="edit-budget-container" action="#" onSubmit={handleSubmit}>
             <div className="budget">
-                <label htmlFor="new-budget" className="sr-only" >New Budget</label>
+                <label htmlFor="new-budget" className="sr-only">New Budget</label>
                 <input type="number"
                 value={newBudget}
                 onChange={ (event) => {
@@ -36,8 +35,7 @@ function ChangeBudget({isEditing, setIsEditing}) {
             </div>
 
             <button>Save</button>
-            </form>
-        </div>
+        </form>
     );
 }
 

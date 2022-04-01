@@ -7,10 +7,13 @@ function Transaction({transaction}) {
     
     return (
         <li>
-            {transaction.text} <span>${transaction.amount}</span>  
-              <button className="delete-btn" onClick={() => {
+          <span>{transaction.text}</span>
+          <div>
+            <span>${transaction.amount}</span>
+            <button className="delete-btn" onClick={() => {
                 deleteTransaction(transaction.id)
               }}>x</button>
+          </div>
         </li>
     );
 }

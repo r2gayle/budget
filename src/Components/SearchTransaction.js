@@ -15,7 +15,6 @@ function SearchTransaction() {
         const value = event.target.value;
         setExpense(value)
         console.log(expense);
-        transactions.filter()
         
     }
 
